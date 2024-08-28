@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>数学笔记</title>
+    <link href="/2024/08/28/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    <url>/2024/08/28/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="数项级数习题-1"><a href="#数项级数习题-1" class="headerlink" title="数项级数习题(1)"></a>数项级数习题(1)</h1><h2 id="Prob-1"><a href="#Prob-1" class="headerlink" title="Prob.1"></a>Prob.1</h2><blockquote><p>$p&gt;0,x_1&#x3D;\frac{1}{4} 且 x_{n+1}^p&#x3D;x_{n}^p+x_{n}^{2p},证明\sum_{n&#x3D;1}^{\infty}\frac{1}{1+x_n^p}收敛，并求该级数的和。$（2015年全国决赛题）</p></blockquote><p>$Proof$:<br>对已知做等式做恒等变换有$$\begin{cases}<br>\frac1{x_{n}^p+1}&#x3D;\frac{x_{n}^p}{x_{n+1}^p}\<br>\frac{x_{n}^p}{x_{n+1}^p}&#x3D;\frac{x_{n+1}^p-x_{n}^p}{x_{n}^px_{n+1}^p}<br>\end{cases} $$<br>整理得到$$\frac1{x_{n}^p+1}&#x3D;\frac1{x_{n}^p}-\frac1{x_{n+1}^p}$$<br>带入原级数消项得到$$\sum_{n&#x3D;1}^{\infty}\frac{1}{1+x_n^p}&#x3D;\lim_{n\rightarrow \infty}(\frac1{x_{1}^p}-\frac1{x_{n+1}^p})&#x3D;4^p$$<br>$Hint$：<br>$$这里的\frac1{x_{n+1}^p}极限留给读者自证$$</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Math</category>
+      
+      <category>Note</category>
+      
+      <category>无穷级数</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Syudy note</tag>
+      
+      <tag>Math</tag>
+      
+      <tag>数项级数</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>芦洲晚唱</title>
     <link href="/2024/08/26/%E8%8A%A6%E6%B4%B2%E5%94%B1%E6%99%9A/"/>
     <url>/2024/08/26/%E8%8A%A6%E6%B4%B2%E5%94%B1%E6%99%9A/</url>
