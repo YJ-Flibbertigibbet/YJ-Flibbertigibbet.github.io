@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yj-flibbertigibbet.github.io/img/post/4.jpg">
 <meta property="article:published_time" content="2024-08-28T12:14:09.000Z">
-<meta property="article:modified_time" content="2024-09-06T09:17:49.592Z">
+<meta property="article:modified_time" content="2024-09-23T06:50:29.106Z">
 <meta property="article:author" content="YJ">
 <meta property="article:tag" content="Syudy note">
 <meta property="article:tag" content="Math">
@@ -244,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          194 words
+          604 words
         
       </span>
     
@@ -255,7 +255,7 @@
         
         
         
-          2 mins
+          6 mins
         
       </span>
     
@@ -308,7 +308,24 @@
                 
                 <h1 id="数学分析习题笔记"><a href="#数学分析习题笔记" class="headerlink" title="数学分析习题笔记"></a>数学分析习题笔记</h1><p>更新的笔记和习题会一直在放在这篇blog里</p>
 <span id="more"></span>
-<h2 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h2><h3 id="Prob-1"><a href="#Prob-1" class="headerlink" title="Prob.1"></a>Prob.1</h3><blockquote>
+<h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="Prob-1"><a href="#Prob-1" class="headerlink" title="Prob.1"></a>Prob.1</h3><blockquote>
+<p>（贡献者：诺坎普晚风）$f(x),g(x) \in [0,1]$且$0\leq f(x),g(x)\leq 1$,试证明：|$\int_0^1f(x)g(x)dx-\int_0^1f(x)dx\int_0^1g(x)dx$|$\leq \frac14$</p>
+</blockquote>
+<p>$Proof:$<br>易知：$[0,1]$上的黎曼可积函数全体可看一线性空间，$R[0,1]$<br>可在$R[0,1]$上定义内积$(f(x),g(x))=\int_0^1f(x)g(x)dx$  </p>
+<p>①若$f(x),g(x)$在$R[0,1]$上线性相关，则结论显然(1为在$[0,1]$取值恒为1的函数)  </p>
+<p>②若$f(x),g(x)$在$R[0,1]$上线性无关  </p>
+<p>$V=\{k_1f(x)+k_2g(x)+k_3|k_i\in R\}$是$R[0,1]$上的三维线性子空间  </p>
+<p>将1扩充为$V$的一组标准正交基: $u(x),v(x),1$ </p>
+<p>设$f(x)=m_0+m_1u(x)+m_2v(x)，<br>g(x)=n_0+n_1u(x)+n_2v(x)$<br>仅需证明$|(f(x),g(x))-(f(x),1)(g(x),1)|\leq\frac14$<br>即$|m_1n_1+m_2n_2|\leq\frac14$</p>
+<p>又由题设$\forall x,f(x),g(x)\in [0,1]$,即$|f(x)-\frac12||g(x)-\frac12|\leq\frac12$<br>$||f(x)-\frac12||,||g(x)-\frac12||\leq \frac12$<br>(上述函数为在$R[0,1]$内积下的范数)</p>
+<p>得到$\sqrt{(m_0-\frac12)^2+m_1^2+m_2^2}\sqrt{(n_0-\frac12)^2+n_1^2+n_2^2}\leq \frac12$</p>
+<p>从而不等式</p>
+<p>$|m_1n_1+m_2n_2|\leq|m_1||n_1|+|m_2||n_2|\leq \sqrt{m_1^2+m_2^2} \sqrt{n_1^2+n_2^2} \leq\frac12\times \frac12\leq\frac14$<br>由柯西不等式知原式得证  </p>
+<p>$Hint:$<br>$-\frac14\leq(\int_0^1g(x)dx)^2-\int_0^1g(x)dx=\int_0^1g(x)dx(\int_0^1g(x)dx-1)$</p>
+<p>$\int_0^1g(x)dx\int_0^1(g(x)-1)dx\leq\int_0^1g(x)dx\int_0^1(g(x)-1)f(x)dx\leq\int_0^1f(x)dx-\int_0^1f(x)dx\int_0^1g(x)dx$</p>
+<p>从而</p>
+<p>$\int_0^1f(x)dx-\int_0^1f(x)dx\int_0^1g(x)dx\leq \int_0^1f(x)dx(1-\int_0^1g(x)dx)\leq\int_0^1g(x)dx(1-\int_0^1g(x)dx)\leq\frac14$</p>
+<h2 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h2><h3 id="Prob-1-1"><a href="#Prob-1-1" class="headerlink" title="Prob.1"></a>Prob.1</h3><blockquote>
 <p>$ p&gt;0,x_1=\frac{1}{4} $ 且 $ x_{n+1}^p=x_{n}^p+x_{n}^{2p} $ ,证明 $ \sum_{n=1}^{\infty}\frac{1}{1+x_n^p} $ 收敛，并求该级数的和。<br> （2015年全国决赛题）</p>
 </blockquote>
 <p>$ Proof $:<br>对已知做等式做恒等变换有</p>
