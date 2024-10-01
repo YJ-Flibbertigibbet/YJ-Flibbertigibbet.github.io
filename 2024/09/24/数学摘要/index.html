@@ -19,16 +19,16 @@
   <meta name="author" content="YJ">
   <meta name="keywords" content="Math,Sharing">
   
-    <meta name="description" content="Nku 数学讨论小组会议纪要">
+    <meta name="description" content="Nku 一些数学记录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数学讨论班">
-<meta property="og:url" content="http://yj-flibbertigibbet.github.io/2024/09/24/%E6%95%B0%E5%AD%A6%E8%AE%A8%E8%AE%BA%E7%8F%AD/index.html">
+<meta property="og:title" content="数学摘要">
+<meta property="og:url" content="http://yj-flibbertigibbet.github.io/2024/09/24/%E6%95%B0%E5%AD%A6%E6%91%98%E8%A6%81/index.html">
 <meta property="og:site_name" content="YJ-blog">
-<meta property="og:description" content="Nku 数学讨论小组会议纪要">
+<meta property="og:description" content="Nku 一些数学记录">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yj-flibbertigibbet.github.io/img/post/4.jpg">
 <meta property="article:published_time" content="2024-09-24T02:10:27.000Z">
-<meta property="article:modified_time" content="2024-09-24T02:30:34.782Z">
+<meta property="article:modified_time" content="2024-10-01T02:40:24.174Z">
 <meta property="article:author" content="YJ">
 <meta property="article:tag" content="Syudy note">
 <meta property="article:tag" content="Math">
@@ -39,7 +39,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>数学讨论班 - YJ-blog</title>
+  <title>数学摘要 - YJ-blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="数学讨论班"></span>
+            <span id="subtitle" data-typed-text="数学摘要"></span>
           
         </div>
 
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          17 words
+          963 words
         
       </span>
     
@@ -254,7 +254,7 @@
         
         
         
-          1 mins
+          9 mins
         
       </span>
     
@@ -300,14 +300,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">数学讨论班</h1>
+            <h1 id="seo-header">数学摘要</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Nku 数学讨论小组会议纪要<br><span id="more"></span></p>
-<h1 id="会议纪要"><a href="#会议纪要" class="headerlink" title="会议纪要"></a>会议纪要</h1><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><blockquote>
-<p>(Contributor：YJ)</p>
+                <p>Nku 一些数学记录<br><span id="more"></span></p>
+<h1 id="纪要"><a href="#纪要" class="headerlink" title="纪要"></a>纪要</h1><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h3 id="Contributor：YJ"><a href="#Contributor：YJ" class="headerlink" title="(Contributor：YJ)"></a>(Contributor：YJ)</h3><h4 id="如何理解一致收敛与极限换序"><a href="#如何理解一致收敛与极限换序" class="headerlink" title="如何理解一致收敛与极限换序"></a>如何理解一致收敛与极限换序</h4><blockquote>
+<p>设{$f_n(x)$}在$(a,b)$上一致收敛到$f(x)$，设对每个$n\geq 1$都有:$f_n(a^+)=\lim_{x\rightarrow a^+}f(x)=\lim_{x\rightarrow a^+}\lim_{n\rightarrow \infty}f_n(x)$=$\lim_{n\rightarrow \infty}\lim_{x\rightarrow a^+}f_n(x)$  </p>
+</blockquote>
+<p>事实上，我们可以利用n和x张成一个不完备的二维空间：不妨设$F(x_0,\frac{1}{n})=f_n(x_0)$,从而可以类比二维层面上的一致收敛</p>
+<h4 id="概率论整理"><a href="#概率论整理" class="headerlink" title="概率论整理"></a>概率论整理</h4><h5 id="多项式系数"><a href="#多项式系数" class="headerlink" title="多项式系数"></a>多项式系数</h5><p>记 $\sum_{i=1}^rn_i=n$ 考虑把 $n$ 个元素分为 $r$ 组,问有多少种分法，定义$(\overset{n}{n_1,n_2…,n_r})=\frac{n!}{n_1!n_2!…n_r!}$ </p>
+<p>值得一提的是这里的 $(\overset{n}{n_1,n_2…,n_r})$ 考虑了顺序，分成了即从n个事件中分出$r$份，这里的$n_1,n_2…n_r$地位并不相同，从 $1$ 到 $r$ 具有一定顺序 </p>
+<h5 id="方程整数解的个数"><a href="#方程整数解的个数" class="headerlink" title="方程整数解的个数"></a>方程整数解的个数</h5><p>值得注意的是非整数解和正整数解的求解区别</p>
+<p>只讨论非负整数解的个数：$\sum_{i=1}^rx_i=x$ ,讨论 $(x_1.x_2…x_r)$ 向量非负解的个数</p>
+<p>注意到在各个事件之间最多可以插空r次，从 $1$ 到 $r$ 次插空，第 $i$ 次插空时，不妨记插空在 $x_j$ 之后，则第 $i+1$ 次插空有 $x-j+1$ 个选择， 即每次插空会在原有基础上多出 $1$ 次插空的位置，因为允许两次插空在相同位置，从而可以转换为对 $x+r$ 个事件做 $r-1$ 次分割得正整数解</p>
+<p>备注：这里做 $r-1$ 次分割但要求多出 $r$ 个事件是由于每个事件的分类都可能在0处，即为保证至少每个分类得到的都有 $1$ 个事件</p>
+<h5 id="容斥恒等式"><a href="#容斥恒等式" class="headerlink" title="容斥恒等式"></a>容斥恒等式</h5><blockquote>
+<p>$P(E_1\cup E_2 \cup …\cup E_n)=\sum_{r=1}^n(-1)^{r+1}\sum_{i_1&lt;…&lt;i_r}P(E_{i_1} \cup …\cup E_{i_r})$</p>
+</blockquote>
+<p>直观解释：$\sum_{i=0}^m (\overset{m}{i}) (-1)^i=0$ , 即对任意事件只被计算一次。被包含于 $m$ 个事件中，穷尽所有子集进行运算后通过加减使得每个事件都只计算一次。而这在容斥恒等式中是对任意包含于 $E_1\cup E_2 \cup …\cup E_n$ 的事件都成立</p>
+<h6 id="不等式推广"><a href="#不等式推广" class="headerlink" title="不等式推广"></a>不等式推广</h6><blockquote>
+<p>$\begin{cases}<br>P(\cup_{i=1}^nE_i)\leq \sum_{i=1}^nP(E_i)\\<br>P(\cup_{i=1}^nE_i)\geq \sum_{i=1}^nP(E_i)-\sum_{j&lt;i}P(E_iE_j)\\<br>P(\cup_{i=1}^nE_i)\leq \sum_{i=1}^nP(E_i)-\sum_{j&lt;i}P(E_iE_j)+\sum_{k&lt;i&lt;j}P(E_kE_iE_j)\\<br>……<br>\end{cases}$</p>
+</blockquote>
+<p>注意到：$P(\cup_{i=1}^nE_i)=P(E_1)+\sum_{i=2}^nP(E_1^cE_2^c…E_{i-1}^cE_i)$ , 即每次对集合做切割，记 $B_i=(E_i\cup_{j&lt;i}E_j)$,而 $P(E_i)=P(B_iE_i)+P(B_i^cE_i)$</p>
+<p>对$P(E_i)=P(B_iE_i)+P(B_i^cE_i)$两边从 $2$到 $n$ 求和，经过替换可以得到 $P(\cup_{i=1}^nE_i)=\sum_1^nP(E_i)-\sum_2^nP(B_iE_i)$,于是第一个不等式得证</p>
+<p>同理其他不等式得证</p>
+<h5 id="配对问题-帽子"><a href="#配对问题-帽子" class="headerlink" title="配对问题(帽子)"></a>配对问题(帽子)</h5><blockquote>
+<p>$N$ 个人分配 $N$ 顶帽子，讨论所有人都没有拿到自己帽子的概率</p>
+</blockquote>
+<p>记 $E_i$ 为第 $i$ 个人拿到自己帽子的事件，从而利用容斥定理分别计算至少有1个人分配到自己帽子的概率 $P(\cup_1^nE_i)=\sum_{n=1}^N(-1)^{n+1}\sum_{i_1&lt;…&lt;i_n}P(E_{i_1}\cup…\cup E_{i_n})$</p>
+<p>$\sum_{i_1&lt;…&lt;i_n}P(E_{i_1}\cup…\cup E_{i_n})=(\overset{n}{N})\frac{(N-n)!}{N!}=\frac1{n!}$,从而利用容斥不等式知： $P(\cup_1^nE_i)=\sum_1^N(-1)^{n+1}\frac1{n!}$</p>
+<p>最后做补集可得概率 $\sum_0^N(-1)^{n}\frac1{n!}$ ，当 $N$ 足够大时知概率接近 $e^{-1}$</p>
+<h5 id="游程"><a href="#游程" class="headerlink" title="游程"></a>游程</h5><blockquote>
+<p>在一组数据中连续出现的相同数值的长度(一般为二分形式)</p>
+<h6 id="游程检验"><a href="#游程检验" class="headerlink" title="游程检验"></a>游程检验</h6><p>在游程检验中，我们通常关心的是在一个数据序列中，有多少个游程，以及这些游程是否符合随机分布的预期</p>
 </blockquote>
 
                 
@@ -363,8 +390,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>数学讨论班</div>
-      <div>http://yj-flibbertigibbet.github.io/2024/09/24/数学讨论班/</div>
+      <div>数学摘要</div>
+      <div>http://yj-flibbertigibbet.github.io/2024/09/24/数学摘要/</div>
     </div>
     <div class="license-meta">
       
@@ -407,6 +434,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2024/09/29/%E5%8D%9A%E5%BC%88%E8%AE%BA/" title="博弈论">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">博弈论</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
