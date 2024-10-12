@@ -31,35 +31,6 @@
   
   
   <entry>
-    <title>博弈论</title>
-    <link href="/2024/09/29/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
-    <url>/2024/09/29/%E5%8D%9A%E5%BC%88%E8%AE%BA/</url>
-    
-    <content type="html"><![CDATA[<p>关于博弈论的一些笔记<br><span id="more"></span></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Syudy note</category>
-      
-      <category>博弈论</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Syudy note</tag>
-      
-      <tag>博弈论</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>数学摘要</title>
     <link href="/2024/09/24/%E6%95%B0%E5%AD%A6%E6%91%98%E8%A6%81/"/>
     <url>/2024/09/24/%E6%95%B0%E5%AD%A6%E6%91%98%E8%A6%81/</url>
@@ -81,46 +52,6 @@
       <tag>Syudy note</tag>
       
       <tag>Math</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Python学习笔记</title>
-    <link href="/2024/09/05/Py/"/>
-    <url>/2024/09/05/Py/</url>
-    
-    <content type="html"><![CDATA[<p>一些笔记<br><span id="more"></span></p><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h3 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h3><ul><li>区别：7/2=4   ； 7/2.0=3.5</li><li>整除运算符：// (返回小于真实值的最大整数)</li><li>幂运算：**</li><li>模运算：% (求余数)</li><li>拆分语句：\</li><li>合并语句：;<h3 id="规范"><a href="#规范" class="headerlink" title="规范"></a>规范</h3></li><li>缩进对其，要求层次一致<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3>调用函数之前需要先调用模块<br><code>import xxx</code></li></ul><p>注意调用函数时格式为：模块.函数名<br><code>math.sin(x)</code></p><p>函数()中存在多个参数时使用”,”隔开<br><code>max(a,b,c)</code></p><p><code>winsound.Beep(500,1000)</code><br>频率＋时间</p><h4 id="input"><a href="#input" class="headerlink" title="input()"></a>input()</h4><p>键盘输入信息(注意这里无论键入什么类型的信息都转换为字符型)<br><code>a=input(提示信息&#123;字符串类型&#125;)</code></p><p>注意int(“”)不可将小数字符串转换为整数</p><h3 id="播放音频文件"><a href="#播放音频文件" class="headerlink" title="播放音频文件"></a>播放音频文件</h3><h4 id="os模块"><a href="#os模块" class="headerlink" title="os模块"></a>os模块</h4><p>`os.system(start 路径)</p><h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3><p><code>if 判断条件 :</code><br><code>elif 判断条件:</code><br>包含关系与先后关系要保证一致性<br><code>else:</code><br>注意冒号，建议使用空格缩进 </p><h3 id="逻辑判断符"><a href="#逻辑判断符" class="headerlink" title="逻辑判断符"></a>逻辑判断符</h3><p><code>and</code>:和<br><code>or</code>：或者  </p><h4 id="正确处理运算优先级"><a href="#正确处理运算优先级" class="headerlink" title="正确处理运算优先级"></a>正确处理运算优先级</h4><p>not &gt; and &gt; or  </p><h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><code>while 循环条件 ：</code></p><h3 id="time模块"><a href="#time模块" class="headerlink" title="time模块"></a>time模块</h3><p><code>sleep</code>函数<br><code>time.sleep()</code><br>休眠多少秒</p><h3 id="用连接符构造字符串"><a href="#用连接符构造字符串" class="headerlink" title="用连接符构造字符串"></a>用连接符构造字符串</h3><p><code>+</code> ： 字符串连接符  </p><h2 id="Chapter-2"><a href="#Chapter-2" class="headerlink" title="Chapter 2"></a>Chapter 2</h2><h3 id="random模块"><a href="#random模块" class="headerlink" title="random模块"></a>random模块</h3><p><code>random.randint(a,b)</code> : 返回一个在a，b之间的整数  </p><h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><p>跳出循环语句</p><h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><p>不执行直接过渡</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>电子邮件</title>
-    <link href="/2024/09/02/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/"/>
-    <url>/2024/09/02/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/</url>
-    
-    <content type="html"><![CDATA[<h1 id="一些注意事项"><a href="#一些注意事项" class="headerlink" title="一些注意事项"></a>一些注意事项</h1><span id="more"></span><h2 id="电子信箱前缀"><a href="#电子信箱前缀" class="headerlink" title="电子信箱前缀"></a>电子信箱前缀</h2><p>要求最好具备辨识度，建议<br>$name+@$</p><h2 id="后缀"><a href="#后缀" class="headerlink" title="后缀"></a>后缀</h2><p>值得信赖的公司，避免使用QQ邮箱</p><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>发件人+邮件核心概略</p><h2 id="邮件正文"><a href="#邮件正文" class="headerlink" title="邮件正文"></a>邮件正文</h2><div class="table-container"><table><thead><tr><th>正文</th></tr></thead><tbody><tr><td>抬头(敬称)</td></tr><tr><td>导入语</td></tr><tr><td>正文</td></tr><tr><td>祝福语</td></tr><tr><td>落款+日期</td></tr></tbody></table></div>]]></content>
-    
-    
-    <categories>
-      
-      <category>Intro</category>
-      
-      <category>email</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Intro</tag>
       
     </tags>
     
@@ -154,33 +85,6 @@
       <tag>Math</tag>
       
       <tag>数学分析</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>芦洲晚唱</title>
-    <link href="/2024/08/26/%E8%8A%A6%E6%B4%B2%E5%94%B1%E6%99%9A/"/>
-    <url>/2024/08/26/%E8%8A%A6%E6%B4%B2%E5%94%B1%E6%99%9A/</url>
-    
-    <content type="html"><![CDATA[<p>更新中ING—</p><span id="more"></span><h2 id="第一章：风满楼"><a href="#第一章：风满楼" class="headerlink" title="第一章：风满楼"></a>第一章：风满楼</h2><p>风扯着酒旗在半空中晃啊晃，晚秋的落日并不算亲人，霞光只是温和地落下，却并未引起任何实质性的温度变化，仿佛山雾漫进了溪流之中，它们的存在形式并没有什么本质上的不同。</p><p>卢三宝见天色渐晚，向楼里招呼了声，正欲同旁一道在楼里打杂的张瘤子换趟儿交个班，却只见一阵不寻常的冷风杀地从门外一股脑儿涌了进来。</p><p>这个点儿客人虽并不如往常一般多，但却都出奇一致地就着这股子冷意冲门外望去。</p><p>随着一只裹着黑布绑腿的生皮鞮将将越过门槛，一柄缠着白麻的淬刃嗖——的飞入酒楼中，擦着卢三宝的面门而过，最终死死钉在了雕花什锦窗框上。</p><p>只听咚——的一声，卢三宝两膝打着颤儿，经不住软得跪在了地上。</p><p>厅内一片死寂。</p><p>“姬笑梅何在？”</p><p>划破这片沉默的是一道清冷至极的男声，那生皮鞮的主人跨过门槛，站在酒楼大厅正前，确是锁住了所有人出去的路。只见来者头上戴着一顶宽大的蓑笠帽，帽檐洒下的阴影堪堪遮掩住了此人的面容，叫人分不清神色。</p><p>闻言，卢三宝扶着墙借着力才堪堪起了身。</p><p>“客家。”</p><p>他颤着嗓音，半晌才壮着胆开了口。</p><p>“楼里确是没有姬姓的伙计。”</p><p>顺着说话的人瞧去，那来者抬眸，眼底却是不着痕迹地闪过一丝不耐烦，他抱着胸，就着门框斜斜的靠着在壁柱上，没再开口。</p><p>卢三宝正欲再说点什么，目光扫过那人腰间的短刃，噤了声。</p><p>“上来。”</p><p>大堂里的沉默并没有维持太久，打破这一沉重氛围的声音来源于二楼雅间。一个身着玄色窄袖便袍的男人站在木梯口旁，眸光淡淡，向着那大堂中闯入的不速之客扫了眼，声音听不出什么感情色彩。等楼下的少年反应过来，只瞧见那男人转身拨开旁的竹帘子，抬脚进了左手边的雅座。</p><p>定了定神，没做他想，少年跟了上去。</p><p>二楼，雅间。</p><p>“宋怀民。”</p><p>声音自雅阁内传来，与刚才在堂里听见的音色不同，这次的声音来源于一位女性——一位大抵算得上年轻的女性。</p><p>少年扶在门帘上的手顿了顿，眼底微不可察地闪过一抹杀意，只是这一丝危险的情绪在出现的那一刹那便被很好地收敛了起来，并没有任何人察觉到。</p><p>“你知道我。”</p><p>是肯定句，宋怀民停在雅间的门后，抬手，摘了头顶上的蓑笠帽背在身后。</p><p>“能找到这里来，你很了不起。”</p><p>一层极细腻的白纱半遮半掩就着眼前女子的轮廓将将垂落，那人端坐在厢内正中央，右手轻提柚花雕松青瓷壶，左手紧着壶盖。自壶口喷涌而出的水柱四溢着茶香，在空中扬出一道优美的抛物线后径直落入身前的雕花建盏中，却不见漾出一滴水花。</p><p>她的手，很稳。</p><p>宋怀民轻抚腰后短刃，心下盘算着出手成事的机率。</p><p>等到雕花建盏的茶水渐满，那女子收了手，轻推身前的茶杯，敞开手掌就着那茶比了比。</p><p>“吃口茶。”</p><p>少年没有动，只是直勾勾地望着那人。</p><p>“你不必太过紧张。”</p><p>那女子抬头，顺着宋怀民的目光望去。</p><p>错开对面的眼神，少年将手从短刃上移开，摸了摸鼻子，眸光却是又转向那女子身旁伫立的男人。</p><p>直到现在宋怀民才看清那男子的样貌，那是一个身形极高大的男人，如漆一般的缎面窄袖便衣紧紧包裹着他的身体，仅仅只是几眼便仿佛窥见那玄色勾勒下呼之欲出的肌肉线条，那是一个很有气力的男人。可与那喷薄而尽显生命力的肌肉线条相矛盾的，是那男子苍白而无神的双眸。</p><p>那是一双怎样的眸子，在那双眼睛中宋怀民看不见任何一丝活人的光彩，浑浊而空洞得让人无法分辨他到底在注视着什么。</p><p>几乎是在打量对面男人的瞬间，少年忽的感受到一股莫名的杀意在房内升腾。</p><p>女人仍然比着茶，嘴角含笑望向宋怀民。</p><p>放下手，少年承了对方的意，径直向前走去，坐在了那女人的对面。</p><p>“请。”</p><p>再次比了比手旁的茶，女人开口。</p><p>屋内的杀意散去。</p><p>左手握住眼前的雕花建盏，宋怀民端起茶，抿了一小口。茶是好茶，只是比刚过水的要凉上许多，便显得有些苦了。</p><p>“你便是姬笑梅。”</p><p>是肯定句，放下茶盏，宋怀民冷不丁开口。</p><p>“这茶如何？”</p><p>那女人没有回答，只是给自己也倒了盏茶。</p><p>“不如何。”</p><p>宋怀民的同样没有正面回答女人的问题。</p><p>斟了斟茶，女人并不恼。</p><p>“关于你所求的，我这里没有答案。”</p><p>“……”</p><p>宋怀民盯着女人，眸光开始变得犀利起来。</p><h2 id="第二章：借命人"><a href="#第二章：借命人" class="headerlink" title="第二章：借命人"></a>第二章：借命人</h2><p>如果在你身前摆着一个机会，垂死之人能借他人之身重生，代价是被借命者魂飞魄散，这种伤天害理之事之于生死之前，你做或不做？</p><p>宋怀民没有答案。</p><p>至少在父亲死前，他一直没有答案。</p><p>人固有一死，不过时间问题，一个人生命的延续同一群人生命的延续，孰轻孰重，又有谁能断定呢。</p><p>但这答案到底如何，对宋怀民来说并没有什么影响，只是这问题一直都在，而如今，也终于到了宋怀民不得不面对它的时候了。</p><p>……</p><p>时间回到五个月前。</p><p>朝剑宇文，半刀轩辕，问道隐官，借命宋府，避世少林。自上一次改朝换代之后，这五方势力便相互牵制，而这武林之主亦是由此五家轮流任命。</p><p>宇文家练剑，行侠仗义剑走江湖；轩辕家主刀，亦正亦邪不明立场；隐官是朝中暗涌的一股武林势力，大都同皇家扯上些干系；少林多年来藏于深山不问世事，只于江湖飘摇之时出手。</p><p>而宋府，也就是宋怀民所属的势力，守借命之术</p><p>在宋家借命之声鹊起前，实则江湖中只大致此四方势力相互制衡</p><p>矛盾爆发于宋府失势</p><hr><p>未完待续</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Novel</category>
-      
-      <category>武侠</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Novel</tag>
       
     </tags>
     
