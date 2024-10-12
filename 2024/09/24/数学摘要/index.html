@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yj-flibbertigibbet.github.io/img/post/4.jpg">
 <meta property="article:published_time" content="2024-09-24T02:10:27.000Z">
-<meta property="article:modified_time" content="2024-10-01T02:40:24.174Z">
+<meta property="article:modified_time" content="2024-10-12T13:51:45.063Z">
 <meta property="article:author" content="YJ">
 <meta property="article:tag" content="Syudy note">
 <meta property="article:tag" content="Math">
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          963 words
+          1.6k words
         
       </span>
     
@@ -254,7 +254,7 @@
         
         
         
-          9 mins
+          14 mins
         
       </span>
     
@@ -306,7 +306,7 @@
               <div class="markdown-body">
                 
                 <p>Nku 一些数学记录<br><span id="more"></span></p>
-<h1 id="纪要"><a href="#纪要" class="headerlink" title="纪要"></a>纪要</h1><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h3 id="Contributor：YJ"><a href="#Contributor：YJ" class="headerlink" title="(Contributor：YJ)"></a>(Contributor：YJ)</h3><h4 id="如何理解一致收敛与极限换序"><a href="#如何理解一致收敛与极限换序" class="headerlink" title="如何理解一致收敛与极限换序"></a>如何理解一致收敛与极限换序</h4><blockquote>
+<h1 id="纪要"><a href="#纪要" class="headerlink" title="纪要"></a>纪要</h1><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h4 id="如何理解一致收敛与极限换序"><a href="#如何理解一致收敛与极限换序" class="headerlink" title="如何理解一致收敛与极限换序"></a>如何理解一致收敛与极限换序</h4><blockquote>
 <p>设{$f_n(x)$}在$(a,b)$上一致收敛到$f(x)$，设对每个$n\geq 1$都有:$f_n(a^+)=\lim_{x\rightarrow a^+}f(x)=\lim_{x\rightarrow a^+}\lim_{n\rightarrow \infty}f_n(x)$=$\lim_{n\rightarrow \infty}\lim_{x\rightarrow a^+}f_n(x)$  </p>
 </blockquote>
 <p>事实上，我们可以利用n和x张成一个不完备的二维空间：不妨设$F(x_0,\frac{1}{n})=f_n(x_0)$,从而可以类比二维层面上的一致收敛</p>
@@ -332,10 +332,24 @@
 <p>记 $E_i$ 为第 $i$ 个人拿到自己帽子的事件，从而利用容斥定理分别计算至少有1个人分配到自己帽子的概率 $P(\cup_1^nE_i)=\sum_{n=1}^N(-1)^{n+1}\sum_{i_1&lt;…&lt;i_n}P(E_{i_1}\cup…\cup E_{i_n})$</p>
 <p>$\sum_{i_1&lt;…&lt;i_n}P(E_{i_1}\cup…\cup E_{i_n})=(\overset{n}{N})\frac{(N-n)!}{N!}=\frac1{n!}$,从而利用容斥不等式知： $P(\cup_1^nE_i)=\sum_1^N(-1)^{n+1}\frac1{n!}$</p>
 <p>最后做补集可得概率 $\sum_0^N(-1)^{n}\frac1{n!}$ ，当 $N$ 足够大时知概率接近 $e^{-1}$</p>
-<h5 id="游程"><a href="#游程" class="headerlink" title="游程"></a>游程</h5><blockquote>
+<h5 id="游程-（contributor：YJ-amp-phi’-x"><a href="#游程-（contributor：YJ-amp-phi’-x" class="headerlink" title="游程 （contributor：YJ &amp; $\phi’(x)$)"></a>游程 （contributor：YJ &amp; $\phi’(x)$)</h5><blockquote>
 <p>在一组数据中连续出现的相同数值的长度(一般为二分形式)</p>
-<h6 id="游程检验"><a href="#游程检验" class="headerlink" title="游程检验"></a>游程检验</h6><p>在游程检验中，我们通常关心的是在一个数据序列中，有多少个游程，以及这些游程是否符合随机分布的预期</p>
+<h6 id="分析与例题"><a href="#分析与例题" class="headerlink" title="分析与例题"></a>分析与例题</h6><p>假设有一段成功率为$p$的序列，求连续$n$次的成功在连续$m$次失败之前的概率。</p>
 </blockquote>
+<p>记：$E$为事件“连续$n$次成功在连续$m$次失败之前” , $F$为事件“第$2$到$n$次都成功”, $H_1$为事件“第$1$次成功”。</p>
+<p>本题求解不是我们的重点，我们重点分析课本中出现的一个式子：</p>
+<script type="math/tex; mode=display">
+P(E|F^cH_1) = P(E|H_1^c)</script><p>事件$HF^c$意味着前$k(k&lt;n)$次是连续成功的，而第$k+1$次是失败的，我们要考虑$n$次成功在$m$次连续失败之前的事件，因为第$k+1$次实验是失败的，所以前$k$次成功对$E$ 没有任何影响，无论$k$等于多少，也要从第$k+1$次重新计算连续成功的次数，和实验只做了$1$次但失败了是一个效果。</p>
+<p>或者用数学的记号来说明：记 $H_i(i = 1,2,\cdots ,n)$ 为事件“第 $i$ 次试验成功”。</p>
+<p>$B_i = H_1H_2\cdots H_{i - 1}H_i^c(i =1,2,\cdots,n)$为事件“前 $i -1$ 次试验成功，第 $i$ 次试验失败。满足$\displaystyle \bigcup_{i = 2}^nB_i = F^cH_1,\ \bigcap_{i = 1}^nB_i = \varnothing$</p>
+<p>则式子转化为：</p>
+<p>$<br>P(E|\bigcup_{i = 2}^nB_i) = P(E|B_1)<br>$</p>
+<p>现在我们把问题抽象出来，如果我们记$H$为事件“前$n$次试验出现失败”，记$A = F^cH_1$，$B = H_1^c$，那么有$A\cup B = H,A\cap B = \varnothing$。则此时有$P(E|A) = P(E|B) = P(E|H)$。对于两个事件成立这样的等式，那么对于多个事件，这样的等式是否仍然成立？</p>
+<p><strong>推广1：</strong><br>设$P(E|F_i) = p$，$\displaystyle \bigcup_{i = 1}^nF_i = F,\bigcap_{i = 1}^nF_i = \varnothing$，则：<br>$<br>P(E|F_i) = P(E|\bigcup_{i = 1}^ n F_i) = p<br>$</p>
+<p><strong>证明：</strong><br>$<br>P(E|\bigcup_{i = 1}^nF_i) = \frac {P(E\bigcup_{i = 1}^nF_i)}{\sum_{i = 1}^nP(F_i)} = \frac {\sum_{i = 1}^nP(EF_i)}{\sum_{i = 1}^nP(F_i)} = \frac {\sum_{i = 1}^nP(E|F_i)P(F_i)}{\sum_{i = 1}^nP(F_i)} = p<br>$<br>在得到这样的结论，我们自然会设想，假如$P(E|F_i) = p_i(i = 1,2,\cdots,n)$，$\displaystyle \bigcup_{i = 1}^nF_i = F,\bigcap_{i = 1}^nF_i = \varnothing$，会有类似的结论吗？</p>
+<p><strong>推广2：</strong><br>设$P(E|F_i) = p_i$，$\displaystyle \bigcup_{i = 1}^nF_i = F,\bigcap_{i = 1}^nF_i = \varnothing$，则：<br>$<br>P(E|\bigcup_{i = 1}^ n F_i) = \sum_{i = 1}^n\frac {P(F_i)}{P(F)}p_i<br>$</p>
+<p><strong>证明：</strong><br>$<br>P(E|\bigcup_{i = 1}^nF_i) = \frac {P(E\bigcup_{i = 1}^nF_i)}{\sum_{i = 1}^nP(F_i)} = \frac {\sum_{i = 1}^nP(EF_i)}{\sum_{i = 1}^nP(F_i)} = \frac {\sum_{i = 1}^nP(E|F_i)P(F_i)}{\sum_{i = 1}^nP(F_i)} = \sum_{i = 1}^n\frac {P(F_i)}{P(F)}p_i<br>$</p>
+<p>直观上，推广2就是对条件概率的加权平均，推广1是推广2的一种特例。</p>
 
                 
               </div>
